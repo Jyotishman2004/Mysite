@@ -374,8 +374,20 @@ const Terminal = () => {
                 const weatherData = await weatherRes.json();
 
                 if (weatherData.current_weather) {
-                    const { temperature, windspeed } = weatherData.current_weather;
-                    setHistory(prev => [...prev, { type: 'system', text: `${name}, ${country}: ${temperature}°C | Wind: ${windspeed}km/h` }]);
+                    const { temperature, windspeed, weathercode } = weatherData.current_weather;
+                    
+                    const getWeatherCondition = (code) => {
+                        if (code === 0) return 'Clear Sky ☀️';
+                        if (code >= 1 && code <= 3) return 'Partly Cloudy ⛅';
+                        if (code === 45 || code === 48) return 'Foggy 🌫️';
+                        if ((code >= 51 && code <= 57) || (code >= 61 && code <= 67) || (code >= 80 && code <= 82)) return 'Rainy 🌧️';
+                        if ((code >= 71 && code <= 77) || (code >= 85 && code <= 86)) return 'Snowy ❄️';
+                        if (code >= 95 && code <= 99) return 'Thunderstorm ⛈️';
+                        return 'Unknown';
+                    };
+                    const condition = getWeatherCondition(weathercode);
+
+                    setHistory(prev => [...prev, { type: 'system', text: `${name}, ${country}: ${condition} | ${temperature}°C | Wind: ${windspeed}km/h` }]);
                 } else {
                     setHistory(prev => [...prev, { type: 'error', text: `Atmospheric data unavailable for ${name}.` }]);
                 }
