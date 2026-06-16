@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Bauhaus Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#d0cbc3",
+                        "surface-dim": "#d6d1c9",
+                        "on-tertiary-container": "#1a1a1a",
+                        "on-secondary-fixed": "#1a1a1a",
+                        "on-primary-fixed": "#1a1a1a",
+                        "surface-container-low": "#f2ede5",
+                        "on-secondary": "#1a1a1a",
+                        "on-tertiary-fixed-variant": "#1a1a1a",
+                        "inverse-primary": "#f5f0e8",
+                        "background": "#f5f0e8",
+                        "on-secondary-fixed-variant": "#1a1a1a",
+                        "on-surface": "#1a1a1a",
+                        "tertiary-fixed-dim": "#a8c6ff",
+                        "surface": "#f5f0e8",
+                        "inverse-on-surface": "#f5f0e8",
+                        "primary-fixed-dim": "#e6b800",
+                        "on-primary-fixed-variant": "#1a1a1a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb3ab",
+                        "on-secondary-container": "#1a1a1a",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1a1a1a",
+                        "on-tertiary-fixed": "#1a1a1a",
+                        "surface-bright": "#faf7f2",
+                        "on-primary-container": "#1a1a1a",
+                        "outline": "#1a1a1a",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#0055ff",
+                        "surface-container-highest": "#e2ddd4",
+                        "error": "#cc0000",
+                        "primary-container": "#ffcc00",
+                        "secondary-fixed": "#ffdad6",
+                        "inverse-surface": "#1a1a1a",
+                        "secondary-container": "#ffdad6",
+                        "on-surface-variant": "#4a4a4a",
+                        "tertiary-container": "#d6e3ff",
+                        "surface-container-high": "#e8e3da",
+                        "primary": "#1a1a1a",
+                        "surface-container": "#eee9e0",
+                        "on-background": "#1a1a1a",
+                        "surface-variant": "#e8e3da",
+                        "primary-fixed": "#ffcc00",
+                        "tertiary-fixed": "#d6e3ff",
+                        "secondary": "#e63b2e",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "display": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        .neo-brutal-border {
+            border: 3px solid #1a1a1a;
+        }
+        .neo-brutal-shadow {
+            box-shadow: 6px 6px 0px #1a1a1a;
+        }
+        .neo-brutal-input:focus {
+            outline: none;
+            border-bottom: 4px solid #e63b2e;
+        }
+        .neo-brutal-btn:hover {
+            background-color: #1a1a1a;
+            color: #f5f0e8;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 3fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col md:flex-row">
+<!-- TopNavBar (Mobile Only) -->
+<nav class="md:hidden w-full top-0 bg-background dark:bg-primary border-b-4 border-primary dark:border-primary-fixed flex justify-between items-center px-6 py-4 max-w-full z-50 sticky">
+<div class="text-2xl font-black tracking-tighter text-primary dark:text-primary-fixed uppercase font-headline">CREATIVE_ARCHIVE</div>
+<button class="p-2 neo-brutal-border hover:bg-primary hover:text-background transition-colors duration-100" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl block">menu</span>
+</button>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div class="hidden fixed inset-0 bg-background z-40 flex flex-col pt-24 px-6 border-b-4 border-primary pb-8 neo-brutal-shadow h-auto bottom-auto" id="mobile-menu">
+<ul class="flex flex-col gap-6 font-headline uppercase tracking-tighter font-black text-3xl">
+<li><a class="text-primary dark:text-on-primary-fixed-variant hover:bg-primary hover:text-background transition-colors duration-100 p-2 block" href="#">WORK</a></li>
+<li><a class="text-primary dark:text-on-primary-fixed-variant hover:bg-primary hover:text-background transition-colors duration-100 p-2 block" href="#">STUDIO</a></li>
+<li><a class="text-primary dark:text-on-primary-fixed-variant hover:bg-primary hover:text-background transition-colors duration-100 p-2 block" href="#">LAB</a></li>
+<li><a class="text-secondary dark:text-secondary underline decoration-4 underline-offset-8 p-2 block" href="#">CONTACT</a></li>
+</ul>
+<button class="mt-8 bg-primary text-background font-headline font-bold uppercase py-4 neo-brutal-border w-full text-center hover:bg-secondary transition-colors">HIRE ME</button>
+</div>
+<!-- SideNavBar (Web Only) -->
+<aside class="hidden md:flex fixed left-0 top-0 h-full flex-col w-64 border-r-4 border-primary dark:border-primary-fixed bg-background dark:bg-primary z-40">
+<div class="p-6 border-b-4 border-primary">
+<h1 class="text-xl font-black text-primary dark:text-primary-fixed font-headline uppercase leading-none">PORTFOLIO_V1</h1>
+<p class="text-xs font-bold font-body uppercase mt-2 text-on-surface-variant">2024_EDITION</p>
+</div>
+<nav class="flex-grow font-headline font-bold uppercase">
+<ul>
+<li><a class="flex items-center gap-4 text-primary dark:text-on-primary-fixed-variant p-4 border-b-2 border-primary hover:bg-tertiary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">grid_view</span> INDEX</a></li>
+<li><a class="flex items-center gap-4 text-primary dark:text-on-primary-fixed-variant p-4 border-b-2 border-primary hover:bg-tertiary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">folder_open</span> ARCHIVE</a></li>
+<li><a class="flex items-center gap-4 text-primary dark:text-on-primary-fixed-variant p-4 border-b-2 border-primary hover:bg-tertiary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">edit_note</span> JOURNAL</a></li>
+<li><a class="flex items-center gap-4 bg-primary text-background p-4 border-b-2 border-primary" href="#"><span class="material-symbols-outlined">info</span> INFO</a></li>
+</ul>
+</nav>
+<div class="p-6 border-t-4 border-primary mt-auto">
+<button class="w-full py-4 px-2 neo-brutal-border neo-brutal-shadow bg-secondary text-background font-headline font-bold uppercase hover:bg-primary transition-colors hover:translate-x-1 hover:translate-y-1">GET IN TOUCH</button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-grow md:ml-64 flex flex-col w-full relative">
+<div class="flex-grow p-6 md:p-12 lg:p-24 flex flex-col justify-center max-w-7xl mx-auto w-full">
+<header class="mb-12 md:mb-24">
+<h1 class="font-display font-black text-7xl md:text-9xl tracking-tighter uppercase leading-none text-primary break-words">
+                    SAY<br/>HELLO
+                </h1>
+<div class="h-4 w-32 bg-secondary mt-8"></div>
+</header>
+<div class="contact-grid gap-12 lg:gap-24 w-full">
+<!-- Form Section -->
+<section class="w-full">
+<form class="flex flex-col gap-8 md:gap-12">
+<div class="relative group">
+<label class="font-headline font-bold uppercase text-sm tracking-widest text-on-surface-variant block mb-2" for="name">Name</label>
+<input class="w-full bg-transparent border-0 border-b-4 border-primary text-3xl md:text-5xl font-headline font-black uppercase text-primary px-0 py-4 placeholder-surface-dim focus:ring-0 neo-brutal-input transition-colors rounded-none" id="name" name="name" placeholder="YOUR NAME" required="" type="text"/>
+</div>
+<div class="relative group">
+<label class="font-headline font-bold uppercase text-sm tracking-widest text-on-surface-variant block mb-2" for="email">Email</label>
+<input class="w-full bg-transparent border-0 border-b-4 border-primary text-3xl md:text-5xl font-headline font-black uppercase text-primary px-0 py-4 placeholder-surface-dim focus:ring-0 neo-brutal-input transition-colors rounded-none" id="email" name="email" placeholder="YOUR EMAIL" required="" type="email"/>
+</div>
+<div class="relative group mt-4">
+<label class="font-headline font-bold uppercase text-sm tracking-widest text-on-surface-variant block mb-2" for="message">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b-4 border-primary text-2xl md:text-4xl font-headline font-bold text-primary px-0 py-4 placeholder-surface-dim focus:ring-0 neo-brutal-input transition-colors resize-none rounded-none" id="message" name="message" placeholder="TELL ME EVERYTHING." required="" rows="3"></textarea>
+</div>
+<div class="mt-8">
+<button class="neo-brutal-btn w-full md:w-auto inline-block bg-primary text-background font-headline font-black text-2xl md:text-4xl uppercase tracking-tighter px-12 py-6 neo-brutal-border neo-brutal-shadow transition-all active:translate-x-1 active:translate-y-1 active:shadow-none flex items-center justify-center gap-4 hover:bg-secondary" type="submit">
+                                SEND IT
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Sidebar / Socials -->
+<aside class="flex flex-col gap-12 border-t-4 md:border-t-0 md:border-l-4 border-primary pt-12 md:pt-0 md:pl-12 lg:pl-24">
+<div>
+<h3 class="font-headline font-bold uppercase text-sm tracking-widest text-on-surface-variant mb-6">Direct</h3>
+<a class="font-headline font-black text-xl md:text-2xl text-primary hover:text-secondary hover:underline decoration-4 underline-offset-8 transition-all block break-words" href="mailto:hello@bauhaus.studio">
+                            HELLO@<br/>BAUHAUS.STUDIO
+                        </a>
+</div>
+<div>
+<h3 class="font-headline font-bold uppercase text-sm tracking-widest text-on-surface-variant mb-6">Location</h3>
+<p class="font-headline font-bold text-lg text-primary uppercase">
+                            1919 GROPIUS AVE.<br/>
+                            BERLIN, GERMANY<br/>
+                            10115
+                        </p>
+</div>
+<div>
+<h3 class="font-headline font-bold uppercase text-sm tracking-widest text-on-surface-variant mb-6">Social</h3>
+<ul class="flex flex-col gap-4 font-headline font-black text-xl uppercase text-primary">
+<li><a class="hover:text-tertiary hover:translate-x-2 transition-all inline-flex items-center gap-2" href="#"><span class="material-symbols-outlined text-xl">arrow_outward</span> INSTAGRAM</a></li>
+<li><a class="hover:text-tertiary hover:translate-x-2 transition-all inline-flex items-center gap-2" href="#"><span class="material-symbols-outlined text-xl">arrow_outward</span> BEHANCE</a></li>
+<li><a class="hover:text-tertiary hover:translate-x-2 transition-all inline-flex items-center gap-2" href="#"><span class="material-symbols-outlined text-xl">arrow_outward</span> DRIBBBLE</a></li>
+<li><a class="hover:text-tertiary hover:translate-x-2 transition-all inline-flex items-center gap-2" href="#"><span class="material-symbols-outlined text-xl">arrow_outward</span> LINKEDIN</a></li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary dark:bg-surface-container-highest px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 border-t-4 border-primary dark:border-primary-fixed z-10 relative">
+<div class="font-label font-bold uppercase text-xs font-black tracking-widest text-background dark:text-primary">
+                ©2024 BAUHAUS_STUDIO. ALL RIGHTS RESERVED.
+            </div>
+<ul class="flex flex-wrap gap-6 font-label font-bold uppercase text-xs">
+<li><a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">INSTAGRAM</a></li>
+<li><a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">BEHANCE</a></li>
+<li><a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">DRIBBBLE</a></li>
+<li><a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">LINKEDIN</a></li>
+</ul>
+</footer>
+</main>
+<script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('.material-symbols-outlined');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.textContent = 'close';
+            } else {
+                menu.classList.add('hidden');
+                icon.textContent = 'menu';
+            }
+        });
+    </script>
+</body></html>

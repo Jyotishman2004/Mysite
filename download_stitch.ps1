@@ -1,0 +1,26 @@
+New-Item -ItemType Directory -Force -Path "e:\Website\stitch_screens"
+cd e:\Website\stitch_screens
+
+Write-Host "Downloading Shader..."
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzdiMDRiNDBmMTAxMzRhMDY5NjVkYmU0NDExOTMwMGY2EgsSBxC2i4GgghMYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzUyMzkyMjQwMTAzMjMyNTE2OQ&filename=&opi=89354086" -o "1_Shader.html"
+
+Write-Host "Downloading Home..."
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzA4ZGYwMjQ0NTRhMzQ4NGNhNWNkMTdiZWJmZWYzOTgzEgsSBxC2i4GgghMYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzUyMzkyMjQwMTAzMjMyNTE2OQ&filename=&opi=89354086" -o "2_Home.html"
+curl.exe -L "https://lh3.googleusercontent.com/aida/AP1WRLuKhlJ3EfZratRE7_gypj4W5ekANxzV7QgA7tkPHSTGI5mRFxTA6Bfqt1mjrk75bpP0iB9LP48TUAdMan_MJnji6cTPNvDFgryKBf5413zMptZfDcEQtqXQOu8OlrjK2ndh7h06dbvGCcqTWc9ylSNdRn0eZrTEMoI7Gt_C-pmxGziguNA0DxtP1BswfKaiqh63NLYq56hMx9zQYMIZSJUPB7rRTW2yJvswl6YO1-YN9f_AUHkw_RokSriH" -o "2_Home.png"
+
+Write-Host "Downloading Projects..."
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2U4NzkwYzg3Y2JiNTRkZTE5NzNlY2YxNGFkYWM1NzJkEgsSBxC2i4GgghMYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzUyMzkyMjQwMTAzMjMyNTE2OQ&filename=&opi=89354086" -o "3_Projects.html"
+curl.exe -L "https://lh3.googleusercontent.com/aida/AP1WRLt_ZHn77ctmnAFxFmv0GluCWHicdBEQ1TKGiVHo4lABkZuX2-vkBbvuZ0wp2OHUfPNRDWRdtfL4UVOARmpTlW1nblyKjXtcSRSDnAMYe0lGrX2CAKPMqqlE5eP4HFJzZiv4oQxd_Uh8MsWEYTfxZ4tIWk046QI3MVJSxiwp2UHwCRFxe9xYbXwFfP-Wi8fLicSZKd1YVW4AQcz6p7Qq-BMGNPqkpZUdlbIn6xlNRcoREHcZ6EBDlkjTOVay" -o "3_Projects.png"
+
+Write-Host "Downloading Contact..."
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzE1Mjg2NTcxMTI0NDRlMjhhYjM4ZTBiYTBiOWI1NmFhEgsSBxC2i4GgghMYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzUyMzkyMjQwMTAzMjMyNTE2OQ&filename=&opi=89354086" -o "4_Contact.html"
+curl.exe -L "https://lh3.googleusercontent.com/aida/AP1WRLt0TrsWNs_Aa0cv_OnXLF6sA-hLmOMwcBcNV8rlOGdFmvzjFLt0ExgLBDYlyqpQVo0SwOnLCbAa3XZph8vHoK5G95KBAFHCn3P2xNoth5JIhNx3JEwO6Hl0vU-fyI4nk-hhrnJVB9U0xUTvXJXKsuxDT_nkiJghKRztidEbWNus3MfkJBYW2fK-6OLK3SF7nkRBDSr3bpzW0WPdU50QFLN-jdKZE95PtFMeBEIpOy8r37_7tLN4USeJ100" -o "4_Contact.png"
+
+Write-Host "Downloading Three.js..."
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAyNWVjNDFhYjYxZDQ4ZmZiZWQ5ZjFhMDU4OWViMjMxEgsSBxC2i4GgghMYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzUyMzkyMjQwMTAzMjMyNTE2OQ&filename=&opi=89354086" -o "5_Threejs.html"
+
+Write-Host "Downloading About..."
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzc3ZjE1MDUzNjI0MDQ3OWNiM2YyMWZiZmFmYTkyZjg2EgsSBxC2i4GgghMYAZIBJAoKcHJvamVjdF9pZBIWQhQxNzUyMzkyMjQwMTAzMjMyNTE2OQ&filename=&opi=89354086" -o "6_About.html"
+curl.exe -L "https://lh3.googleusercontent.com/aida/AP1WRLtwNC4K47H75bqcYIS6DYszVWD760a-o66zdy1X4Uh2baPgqItiVSKkjLR6Y8SsgBTdPuwYbO1xlHsHvLCwsQm2semg7ROOoopK7C-J2vLTBOoQlKZMrg-GBWU3XVZKUpbBtkbEsA_e2I2r5uKVGZTUS-CqRrUhGJK1ZXVYZ3RgifmqXLy0oLPCmwFfIw9wU5nCRq1YIP7LTXfr6S6HXDsJ9R9yZA2tDmBlF2uWLfERatXQ5TFiQw0vKwFA" -o "6_About.png"
+
+Write-Host "Done downloading."

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#d0cbc3",
+                        "surface-dim": "#d6d1c9",
+                        "on-tertiary-container": "#1a1a1a",
+                        "on-secondary-fixed": "#1a1a1a",
+                        "on-primary-fixed": "#1a1a1a",
+                        "surface-container-low": "#f2ede5",
+                        "on-secondary": "#1a1a1a",
+                        "on-tertiary-fixed-variant": "#1a1a1a",
+                        "inverse-primary": "#f5f0e8",
+                        "background": "#f5f0e8",
+                        "on-secondary-fixed-variant": "#1a1a1a",
+                        "on-surface": "#1a1a1a",
+                        "tertiary-fixed-dim": "#a8c6ff",
+                        "surface": "#f5f0e8",
+                        "inverse-on-surface": "#f5f0e8",
+                        "primary-fixed-dim": "#e6b800",
+                        "on-primary-fixed-variant": "#1a1a1a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb3ab",
+                        "on-secondary-container": "#1a1a1a",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1a1a1a",
+                        "on-tertiary-fixed": "#1a1a1a",
+                        "surface-bright": "#faf7f2",
+                        "on-primary-container": "#1a1a1a",
+                        "outline": "#1a1a1a",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#0055ff",
+                        "surface-container-highest": "#e2ddd4",
+                        "error": "#cc0000",
+                        "primary-container": "#ffcc00",
+                        "secondary-fixed": "#ffdad6",
+                        "inverse-surface": "#1a1a1a",
+                        "secondary-container": "#ffdad6",
+                        "on-surface-variant": "#4a4a4a",
+                        "tertiary-container": "#d6e3ff",
+                        "surface-container-high": "#e8e3da",
+                        "primary": "#1a1a1a",
+                        "surface-container": "#eee9e0",
+                        "on-background": "#1a1a1a",
+                        "surface-variant": "#e8e3da",
+                        "primary-fixed": "#ffcc00",
+                        "tertiary-fixed": "#d6e3ff",
+                        "secondary": "#e63b2e",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "full": "0"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .neo-shadow {
+            box-shadow: 6px 6px 0px 0px #1a1a1a;
+        }
+        .neo-shadow-hover:hover {
+            box-shadow: 2px 2px 0px 0px #1a1a1a;
+            transform: translate(4px, 4px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-background dark:bg-primary text-primary dark:text-primary-fixed font-headline uppercase tracking-tighter font-black w-full top-0 border-b-4 border-primary dark:border-primary-fixed hidden md:flex justify-between items-center px-6 py-4 max-w-full z-50 relative sticky">
+<div class="text-2xl font-black tracking-tighter text-primary dark:text-primary-fixed">
+            CREATIVE_ARCHIVE
+        </div>
+<div class="flex gap-8 items-center">
+<a class="text-secondary dark:text-secondary underline decoration-4 underline-offset-8" href="#">WORK</a>
+<a class="text-primary dark:text-on-primary-fixed-variant hover:bg-primary hover:text-background dark:hover:bg-primary-fixed dark:hover:text-primary transition-colors duration-100 active:translate-x-1 active:translate-y-1 p-2" href="#">STUDIO</a>
+<a class="text-primary dark:text-on-primary-fixed-variant hover:bg-primary hover:text-background dark:hover:bg-primary-fixed dark:hover:text-primary transition-colors duration-100 active:translate-x-1 active:translate-y-1 p-2" href="#">LAB</a>
+<a class="text-primary dark:text-on-primary-fixed-variant hover:bg-primary hover:text-background dark:hover:bg-primary-fixed dark:hover:text-primary transition-colors duration-100 active:translate-x-1 active:translate-y-1 p-2" href="#">CONTACT</a>
+</div>
+<button class="bg-primary text-background border-2 border-primary font-bold px-6 py-2 hover:bg-secondary hover:text-primary transition-colors duration-100 active:translate-x-1 active:translate-y-1 neo-shadow neo-shadow-hover">
+            HIRE ME
+        </button>
+</nav>
+<!-- SideNavBar (Mobile Top Nav adaptation for neo-brutalism context) -->
+<nav class="md:hidden flex justify-between items-center w-full px-4 py-4 bg-background border-b-4 border-primary sticky top-0 z-50">
+<div class="text-xl font-black text-primary font-headline tracking-tighter">PORTFOLIO_V1</div>
+<button class="material-symbols-outlined text-4xl text-primary p-2 border-2 border-primary neo-shadow active:translate-y-1 active:translate-x-1 active:shadow-none" id="mobile-menu-btn">
+            menu
+        </button>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div class="hidden fixed inset-0 bg-background z-40 border-r-4 border-primary pt-20 flex flex-col" id="mobile-menu">
+<div class="p-6 border-b-4 border-primary text-center">
+<div class="font-headline font-black text-2xl text-primary tracking-tighter">PORTFOLIO_V1</div>
+<div class="font-body text-sm font-bold mt-1">2024_EDITION</div>
+</div>
+<div class="flex-grow flex flex-col">
+<a class="bg-primary text-background p-6 border-b-4 border-primary font-headline font-bold text-xl flex items-center justify-between" href="#">
+<span>INDEX</span>
+<span class="material-symbols-outlined">grid_view</span>
+</a>
+<a class="text-primary p-6 border-b-4 border-primary font-headline font-bold text-xl flex items-center justify-between hover:bg-primary hover:text-background transition-colors" href="#">
+<span>ARCHIVE</span>
+<span class="material-symbols-outlined">folder_open</span>
+</a>
+<a class="text-primary p-6 border-b-4 border-primary font-headline font-bold text-xl flex items-center justify-between hover:bg-primary hover:text-background transition-colors" href="#">
+<span>JOURNAL</span>
+<span class="material-symbols-outlined">edit_note</span>
+</a>
+<a class="text-primary p-6 border-b-4 border-primary font-headline font-bold text-xl flex items-center justify-between hover:bg-primary hover:text-background transition-colors" href="#">
+<span>INFO</span>
+<span class="material-symbols-outlined">info</span>
+</a>
+</div>
+<div class="p-6 mt-auto border-t-4 border-primary">
+<button class="w-full bg-secondary text-primary border-4 border-primary font-headline font-bold text-xl py-4 uppercase neo-shadow active:translate-y-1 active:translate-x-1 active:shadow-none transition-all">
+                GET IN TOUCH
+            </button>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="flex-grow flex flex-col">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] min-h-[600px] border-b-4 border-primary overflow-hidden flex items-center justify-center p-6 md:p-12 lg:p-24">
+<!-- Shader Background -->
+<div class="absolute inset-0 z-0 bg-primary">
+<!-- STITCH_SHADER_START:ANIMATION_3 class="absolute inset-0 w-full h-full opacity-80 mix-blend-screen" -->
+<div class="absolute inset-0 w-full h-full opacity-80 mix-blend-screen" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_3" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_3');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 p = -1.0 + 2.0 * uv;
+    p.x *= u_resolution.x / u_resolution.y;
+
+    float t = u_time * 0.5;
+    
+    // Bauhaus colors derived from DS1
+    vec3 red = vec3(0.85, 0.1, 0.1);
+    vec3 black = vec3(0.05, 0.05, 0.05);
+    vec3 white = vec3(0.95, 0.95, 0.95);
+
+    // Fluid motion logic
+    for(float i = 1.0; i < 4.0; i++) {
+        p.x += 0.3 / i * sin(i * 3.0 * p.y + t + u_mouse.x / u_resolution.x);
+        p.y += 0.3 / i * cos(i * 3.0 * p.x + t + u_mouse.y / u_resolution.y);
+    }
+
+    float mask = smoothstep(0.1, 0.11, sin(p.x + p.y));
+    vec3 col = mix(black, red, mask);
+    col = mix(col, white, 0.05 * sin(t + p.x * 2.0));
+
+    gl_FragColor = vec4(col, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_3 -->
+<!-- Fallback solid color block overlay if shader fails/loads -->
+<div class="absolute inset-0 bg-black/40 z-0"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start">
+<div class="bg-primary p-6 md:p-10 border-4 border-primary neo-shadow inline-block transform -rotate-2 hover:rotate-0 transition-transform duration-300 max-w-4xl">
+<h1 class="font-headline font-black text-5xl md:text-7xl lg:text-9xl text-background leading-none tracking-tighter uppercase break-words">
+                        CREATIVE <br/>
+<span class="text-secondary">DIRECTOR</span> <br/>
+                        &amp; DESIGNER
+                    </h1>
+</div>
+<div class="mt-12 md:mt-24 bg-background p-6 border-4 border-primary neo-shadow inline-block max-w-xl self-end transform translate-y-8 translate-x-4 md:-translate-x-12">
+<p class="font-body text-lg md:text-xl font-bold text-primary">
+                        BUILDING BOLD, UNAPOLOGETIC DIGITAL EXPERIENCES. NO FLUFF. JUST FUNCTION.
+                    </p>
+<button class="mt-6 w-full bg-secondary text-primary border-4 border-primary font-headline font-black text-xl py-4 uppercase neo-shadow neo-shadow-hover transition-all flex items-center justify-between px-6 group">
+<span>EXPLORE WORK</span>
+<span class="material-symbols-outlined font-bold text-3xl group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Scrolling Ticker -->
+<div class="absolute bottom-0 left-0 w-full bg-primary-container border-t-4 border-primary overflow-hidden py-3 z-10 flex">
+<div class="whitespace-nowrap flex animate-[scroll_20s_linear_infinite]">
+<span class="font-headline font-black text-xl uppercase tracking-widest text-primary mx-8">NEO-BRUTALIST PORTFOLIO V1 // DESIGN ENGINEER // CREATIVE CODING // </span>
+<span class="font-headline font-black text-xl uppercase tracking-widest text-primary mx-8">NEO-BRUTALIST PORTFOLIO V1 // DESIGN ENGINEER // CREATIVE CODING // </span>
+<span class="font-headline font-black text-xl uppercase tracking-widest text-primary mx-8">NEO-BRUTALIST PORTFOLIO V1 // DESIGN ENGINEER // CREATIVE CODING // </span>
+</div>
+</div>
+</section>
+<!-- Recent Work Section Preview -->
+<section class="py-24 px-6 md:px-12 w-full max-w-screen-2xl mx-auto bg-background">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 border-b-4 border-primary pb-8">
+<h2 class="font-headline font-black text-6xl md:text-8xl text-primary tracking-tighter uppercase leading-none">
+                    RECENT<br/>WORK<span class="text-secondary">.</span>
+</h2>
+<a class="font-headline font-bold text-xl uppercase border-b-4 border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors inline-flex items-center gap-2" href="#">
+                    VIEW ALL ARCHIVE
+                    <span class="material-symbols-outlined">arrow_outward</span>
+</a>
+</div>
+<!-- Bento Grid Structure -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+<!-- Project 1 (Large) -->
+<article class="md:col-span-8 group">
+<div class="aspect-video w-full bg-surface-dim border-4 border-primary overflow-hidden relative neo-shadow group-hover:-translate-y-2 group-hover:translate-x-[-2px] transition-all duration-300">
+<div class="absolute inset-0 bg-primary/20 z-10 group-hover:bg-transparent transition-colors"></div>
+<img alt="Project 1 Preview" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, brutalist concrete gallery space. The room is illuminated by high-contrast, stark lighting that creates a raw, aggressive light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks, raw greys, and pristine whites, punctuated by intense accents of vibrant red. The mood is raw yet technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBouE0F6Sg5rALDU9UQLmQGoGvdafX4MCPU-940ZKo7ZwTzJz1zG2WkKICFU4QxLgsfIfDkXZCuoRUFVl0jSB1nfP7FgEa646qti0JLQ6EYCFcGBWkQVZ3OzSzFN0mknPeRz8WlStKaBrule7wF1dgr0g3ty_h6JUETa05y4eTEv0247SMA7EKQB3xS8PJoBffjT31wY9gI3ISXVAdjlvOOfT3SiettuwHEwjbvNgdGbgLkUZ_hvbR1sMSA6LAK-ZmBAvopiD1F5ihz"/>
+<div class="absolute top-4 left-4 bg-secondary text-primary font-headline font-black px-4 py-2 border-2 border-primary z-20 transform -rotate-2">
+                            2024
+                        </div>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-black text-3xl md:text-4xl text-primary uppercase">SYSTEM ZERO</h3>
+<div class="flex gap-3 mt-3 flex-wrap">
+<span class="bg-primary text-background px-3 py-1 text-sm font-bold border-2 border-primary">WEB DESIGN</span>
+<span class="bg-background text-primary px-3 py-1 text-sm font-bold border-2 border-primary">BRANDING</span>
+</div>
+</div>
+<button class="h-16 w-16 bg-primary text-background flex items-center justify-center border-4 border-primary rounded-full hover:bg-secondary hover:text-primary transition-colors neo-shadow shrink-0">
+<span class="material-symbols-outlined text-3xl">arrow_outward</span>
+</button>
+</div>
+</article>
+<!-- Project 2 (Small Vertical) -->
+<article class="md:col-span-4 group flex flex-col h-full">
+<div class="flex-grow min-h-[400px] w-full bg-surface-dim border-4 border-primary overflow-hidden relative neo-shadow group-hover:-translate-y-2 group-hover:translate-x-[-2px] transition-all duration-300">
+<img alt="Project 2 Preview" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="A close-up view of an experimental editorial layout design. Typography is oversized, bold, and asymmetric, pushing boundaries of traditional grid systems. The color palette is restricted to stark black ink on off-white textured paper, with a single, aggressive slash of pure yellow highlight. The composition feels loud, structured yet chaotic, perfectly embodying the neo-brutalist graphic design ethos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Qb1VHBGMS4Ti0MopocfkiXJ34uAEgCaOdxWrmXcErM5Dt5RPMudlAj-kMv_yfgftjuE29TLMUy18ZZq7tZfmb_SdJkDfyC0yeq1YlF5ZbV0R4hKPvpnt-udn0GOy3w75aCmn2FrYj6W2JMfgm9rhzUYNI4BvXVEV4yZndSRXuVinROf4KUYOgF5h-vR4U80MkA7fVINGPp1dk2YJKl4hm-IYPmyBgKm4QqPzVMbE326eu2melYIdzWAYHP11vgHk1aswjLSoNtNv"/>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-black text-2xl md:text-3xl text-primary uppercase">CTRL ALT DEL</h3>
+<div class="flex gap-3 mt-3 flex-wrap">
+<span class="bg-primary text-background px-3 py-1 text-sm font-bold border-2 border-primary">EDITORIAL</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Manifesto / About Teaser -->
+<section class="border-y-4 border-primary bg-primary text-background py-24 px-6 md:px-12 w-full relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute -right-20 -top-20 text-[30rem] font-headline font-black text-surface-tint opacity-20 leading-none pointer-events-none select-none">
+                *
+            </div>
+<div class="max-w-4xl mx-auto relative z-10 text-center">
+<span class="material-symbols-outlined text-6xl text-secondary mb-8 block" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter mb-8 leading-tight">
+                    DESIGN IS NOT ART.<br/>
+                    DESIGN IS <span class="bg-secondary text-primary px-4 py-1 inline-block transform rotate-2">PROBLEM SOLVING</span>.
+                </h2>
+<p class="font-body text-lg md:text-xl font-bold max-w-2xl mx-auto mb-12 text-surface-container">
+                    I believe in brutal honesty in design. No unnecessary elements, no hiding behind gradients. Just strong structure, raw typography, and undeniable function.
+                </p>
+<button class="bg-background text-primary border-4 border-background font-headline font-black text-xl py-4 px-12 uppercase hover:bg-secondary hover:text-primary hover:border-secondary transition-all neo-shadow">
+                    READ MANIFESTO
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-highest text-background dark:text-primary font-label font-bold uppercase text-xs font-black tracking-widest w-full bottom-0 border-t-4 border-primary dark:border-primary-fixed w-full px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 mt-auto">
+<div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+<span>©2024 BAUHAUS_STUDIO. ALL RIGHTS RESERVED.</span>
+<div class="w-12 h-1 bg-secondary hidden md:block"></div>
+</div>
+<div class="flex gap-6 items-center flex-wrap justify-center">
+<a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">INSTAGRAM</a>
+<a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">BEHANCE</a>
+<a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">DRIBBBLE</a>
+<a class="text-background dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors hover:italic" href="#">LINKEDIN</a>
+</div>
+</footer>
+<style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+<script>
+        // Simple mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if(!mobileMenu.classList.contains('hidden')) {
+                    menuBtn.innerHTML = 'close';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    menuBtn.innerHTML = 'menu';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+    </script>
+</body></html>

@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
+  theme: {
+    extend: {
+      colors: {
+        "outline-variant": "#d0cbc3",
+        "surface-dim": "#d6d1c9",
+        "on-tertiary-container": "#1a1a1a",
+        "on-secondary-fixed": "#1a1a1a",
+        "on-primary-fixed": "#1a1a1a",
+        "surface-container-low": "#f2ede5",
+        "on-secondary": "#1a1a1a",
+        "on-tertiary-fixed-variant": "#1a1a1a",
+        "inverse-primary": "#f5f0e8",
+        "background": "#f5f0e8",
+        "on-secondary-fixed-variant": "#1a1a1a",
+        "on-surface": "#1a1a1a",
+        "tertiary-fixed-dim": "#a8c6ff",
+        "surface": "#f5f0e8",
+        "inverse-on-surface": "#f5f0e8",
+        "primary-fixed-dim": "#e6b800",
+        "on-primary-fixed-variant": "#1a1a1a",
+        "error-container": "#ffdad6",
+        "secondary-fixed-dim": "#ffb3ab",
+        "on-secondary-container": "#1a1a1a",
+        "on-primary": "#ffffff",
+        "surface-tint": "#1a1a1a",
+        "on-tertiary-fixed": "#1a1a1a",
+        "surface-bright": "#faf7f2",
+        "on-primary-container": "#1a1a1a",
+        "outline": "#1a1a1a",
+        "on-error": "#ffffff",
+        "surface-container-lowest": "#ffffff",
+        "on-error-container": "#93000a",
+        "tertiary": "#0055ff",
+        "surface-container-highest": "#e2ddd4",
+        "error": "#cc0000",
+        "primary-container": "#ffcc00",
+        "secondary-fixed": "#ffdad6",
+        "inverse-surface": "#1a1a1a",
+        "secondary-container": "#ffdad6",
+        "on-surface-variant": "#4a4a4a",
+        "tertiary-container": "#d6e3ff",
+        "surface-container-high": "#e8e3da",
+        "primary": "#1a1a1a",
+        "surface-container": "#eee9e0",
+        "on-background": "#1a1a1a",
+        "surface-variant": "#e8e3da",
+        "primary-fixed": "#ffcc00",
+        "tertiary-fixed": "#d6e3ff",
+        "secondary": "#e63b2e",
+        "on-tertiary": "#ffffff"
+      },
+      fontFamily: {
+        "headline": ["Space Grotesk", "sans-serif"],
+        "display": ["Space Grotesk", "sans-serif"],
+        "body": ["Inter", "sans-serif"],
+        "label": ["Space Grotesk", "sans-serif"]
+      }
+    }
+  },
+  plugins: [],
+}
