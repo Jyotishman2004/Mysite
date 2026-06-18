@@ -14,7 +14,11 @@ const Contact = () => {
         const text = `Hello Jyotishman!%0A%0A*Name:* ${name}${emailLine}%0A*Message:* ${message}`;
 
         // Add your WhatsApp number here (include country code, e.g., 919876543210 for India)
-        const waNumber = import.meta.env.VITE_WA_NUMBER;
+        let waNumber = import.meta.env.VITE_WA_NUMBER || '';
+        waNumber = waNumber.replace(/\D/g, '');
+        if (waNumber.length === 10) {
+            waNumber = '91' + waNumber;
+        }
 
         window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank', 'noopener,noreferrer');
     };

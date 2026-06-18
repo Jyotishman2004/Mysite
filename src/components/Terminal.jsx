@@ -291,11 +291,15 @@ const Terminal = () => {
                 } else {
                     newHistory.push({ type: 'system', text: 'Initiating secure WhatsApp connection...' });
                     const finalMessage = trimmedInput;
-                    const phoneNumber = import.meta.env.VITE_WA_NUMBER;
+                    let phoneNumber = import.meta.env.VITE_WA_NUMBER || '';
+                    phoneNumber = phoneNumber.replace(/\D/g, '');
+                    if (phoneNumber.length === 10) {
+                        phoneNumber = '91' + phoneNumber;
+                    }
                     const text = `Hey Jyotishman! I'm ${contactData.name}${contactData.email ? ` (${contactData.email})` : ''}.\n\n${finalMessage}`;
                     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
 
-                    setTimeout(() => window.open(whatsappUrl, '_blank', 'noopener,noreferrer'), 800);
+                    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
                     setInteractiveMode(null);
                     setContactData({ name: '', email: '', message: '' });
                 }
