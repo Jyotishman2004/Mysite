@@ -19,25 +19,25 @@ const NotFound = () => {
                     THE PAGE YOU ARE LOOKING FOR DOES NOT EXIST, HAS BEEN DELETED, OR IS CLASSIFIED.
                 </p>
 
-                <Link to="/" style={{ display: 'block' }} className="bg-secondary text-background font-headline font-black text-2xl uppercase tracking-tighter px-12 py-6 border-4 border-background neo-shadow transition-all active:translate-x-1 active:translate-y-1 active:shadow-none hover:bg-background hover:text-primary cursor-pointer text-center no-underline">
+                <Link to="/" style={{ display: 'block' }} className="bg-secondary text-background font-headline font-black text-2xl uppercase tracking-tighter px-12 py-6 border-4 border-background neo-shadow-light neo-shadow-light-hover hover:bg-background hover:text-primary cursor-pointer text-center no-underline">
                     RETURN TO INDEX
                 </Link>
-            </div>
 
-            {/* Decorative Barcode */}
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-1 h-12 z-10 opacity-50 pointer-events-none">
-                <div className="bg-background w-2 h-full"></div>
-                <div className="bg-background w-1 h-full"></div>
-                <div className="bg-background w-3 h-full"></div>
-                <div className="bg-background w-1 h-full"></div>
-                <div className="bg-background w-4 h-full"></div>
-                <div className="bg-background w-2 h-full"></div>
-                <div className="bg-background w-8 h-full"></div>
-                <div className="bg-background w-1 h-full"></div>
-                <div className="bg-background w-3 h-full"></div>
-                <div className="bg-background w-2 h-full"></div>
-                <div className="bg-background w-5 h-full"></div>
-                <div className="bg-background w-1 h-full"></div>
+                {/* Decorative Barcode */}
+                <div className="mt-16 flex gap-1 h-12 opacity-50 pointer-events-none">
+                    <div className="bg-background w-2 h-full"></div>
+                    <div className="bg-background w-1 h-full"></div>
+                    <div className="bg-background w-3 h-full"></div>
+                    <div className="bg-background w-1 h-full"></div>
+                    <div className="bg-background w-4 h-full"></div>
+                    <div className="bg-background w-2 h-full"></div>
+                    <div className="bg-background w-8 h-full"></div>
+                    <div className="bg-background w-1 h-full"></div>
+                    <div className="bg-background w-3 h-full"></div>
+                    <div className="bg-background w-2 h-full"></div>
+                    <div className="bg-background w-5 h-full"></div>
+                    <div className="bg-background w-1 h-full"></div>
+                </div>
             </div>
         </PageTransition>
     );
