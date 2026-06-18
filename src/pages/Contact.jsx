@@ -87,18 +87,18 @@ const Contact = () => {
                         <div>
                             <h3 className="font-headline font-bold uppercase text-sm tracking-widest text-secondary mb-6 border-b-2 border-secondary pb-2 inline-block">Social Profiles</h3>
                             <div className="flex flex-col gap-4">
-                                <a className="bg-background text-primary border-2 border-background font-headline font-black text-xl px-6 py-4 flex items-center justify-between uppercase hover:bg-secondary hover:text-primary hover:border-secondary neo-shadow-light neo-shadow-light-hover transition-all group" href="https://github.com/Jyotishman2004" target="_blank" rel="noopener noreferrer">
+                                <Link className="bg-background text-primary border-2 border-background font-headline font-black text-xl px-6 py-4 flex items-center justify-between uppercase hover:bg-secondary hover:text-primary hover:border-secondary neo-shadow-light neo-shadow-light-hover transition-all group" to="/404">
                                     <span>GITHUB</span>
                                     <span className="material-symbols-outlined text-3xl group-hover:rotate-45 transition-transform">arrow_outward</span>
-                                </a>
+                                </Link>
                                 <a className="bg-background text-primary border-2 border-background font-headline font-black text-xl px-6 py-4 flex items-center justify-between uppercase hover:bg-secondary hover:text-primary hover:border-secondary neo-shadow-light neo-shadow-light-hover transition-all group" href="https://www.linkedin.com/in/jyotishman-saikia-a1248a411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
                                     <span>LINKEDIN</span>
                                     <span className="material-symbols-outlined text-3xl group-hover:rotate-45 transition-transform">arrow_outward</span>
                                 </a>
-                                <a className="bg-background text-primary border-2 border-background font-headline font-black text-xl px-6 py-4 flex items-center justify-between uppercase hover:bg-secondary hover:text-primary hover:border-secondary neo-shadow-light neo-shadow-light-hover transition-all group" href="https://x.com" target="_blank" rel="noopener noreferrer">
+                                <Link className="bg-background text-primary border-2 border-background font-headline font-black text-xl px-6 py-4 flex items-center justify-between uppercase hover:bg-secondary hover:text-primary hover:border-secondary neo-shadow-light neo-shadow-light-hover transition-all group" to="/404">
                                     <span>TWITTER</span>
                                     <span className="material-symbols-outlined text-3xl group-hover:rotate-45 transition-transform">arrow_outward</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </aside>

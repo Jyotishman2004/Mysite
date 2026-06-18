@@ -1,11 +1,13 @@
-# React + Vite
+# React + Vite Portfolio
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Developer & Architectural Notes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### ⚠️ Intentional Mock Links
+* **GITHUB and TWITTER Links**: The social links for GITHUB and TWITTER in `Footer.jsx` and `Contact.jsx` are **intentionally** configured to link to `/404` (using React Router `<Link to="/404">`). **Do not change them to external profile links**, as keeping them pointing to the system malfunction/404 page is part of the custom mockup/aesthetic design of the website. Only LinkedIn should point to an external profile.
+
+---
 
 ## React Compiler
 
