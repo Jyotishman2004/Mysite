@@ -19,24 +19,27 @@ const NotFound = () => {
                     THE PAGE YOU ARE LOOKING FOR DOES NOT EXIST, HAS BEEN DELETED, OR IS CLASSIFIED.
                 </p>
 
-                <Link to="/" style={{ display: 'block' }} className="bg-secondary text-background font-headline font-black text-2xl uppercase tracking-tighter px-12 py-6 border-4 border-background neo-shadow-light neo-shadow-light-hover hover:bg-background hover:text-primary cursor-pointer text-center no-underline">
-                    RETURN TO INDEX
-                </Link>
-
-                {/* Decorative Barcode */}
-                <div className="mt-16 flex gap-1 h-12 opacity-50 pointer-events-none">
-                    <div className="bg-background w-2 h-full"></div>
-                    <div className="bg-background w-1 h-full"></div>
-                    <div className="bg-background w-3 h-full"></div>
-                    <div className="bg-background w-1 h-full"></div>
-                    <div className="bg-background w-4 h-full"></div>
-                    <div className="bg-background w-2 h-full"></div>
-                    <div className="bg-background w-8 h-full"></div>
-                    <div className="bg-background w-1 h-full"></div>
-                    <div className="bg-background w-3 h-full"></div>
-                    <div className="bg-background w-2 h-full"></div>
-                    <div className="bg-background w-5 h-full"></div>
-                    <div className="bg-background w-1 h-full"></div>
+                {/* Button with exact barcode overlay */}
+                <div className="relative inline-block mb-12">
+                    <Link to="/" style={{ display: 'block' }} className="bg-secondary text-background font-headline font-black text-2xl uppercase tracking-tighter px-12 py-6 border-4 border-background neo-shadow-light neo-shadow-light-hover hover:bg-background hover:text-primary cursor-pointer text-center no-underline relative z-0">
+                        RETURN TO INDEX
+                    </Link>
+                    
+                    {/* Decorative Barcode Overlay (Pointer events disabled to allow button clicks) */}
+                    <div className="absolute inset-0 flex gap-1 justify-center items-center opacity-40 pointer-events-none z-10 px-8">
+                        <div className="bg-background w-2 h-8"></div>
+                        <div className="bg-background w-1 h-8"></div>
+                        <div className="bg-background w-3 h-8"></div>
+                        <div className="bg-background w-1 h-8"></div>
+                        <div className="bg-background w-4 h-8"></div>
+                        <div className="bg-background w-2 h-8"></div>
+                        <div className="bg-background w-8 h-8"></div>
+                        <div className="bg-background w-1 h-8"></div>
+                        <div className="bg-background w-3 h-8"></div>
+                        <div className="bg-background w-2 h-8"></div>
+                        <div className="bg-background w-5 h-8"></div>
+                        <div className="bg-background w-1 h-8"></div>
+                    </div>
                 </div>
             </div>
         </PageTransition>
