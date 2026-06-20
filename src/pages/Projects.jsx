@@ -19,9 +19,15 @@ const Projects = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-wrap gap-4 mb-12 border-b-4 border-primary pb-6">
                         {projectsData.map(project => (
-                            <span key={`label-${project.id}`} className="bg-primary text-background px-6 py-2 font-headline font-bold uppercase text-sm border-2 border-primary neo-shadow neo-shadow-hover cursor-pointer transition-all">
+                            <a 
+                                key={`label-${project.id}`} 
+                                href={project.link} 
+                                target={project.link !== '#' ? '_blank' : '_self'} 
+                                rel="noreferrer"
+                                className="inline-block bg-primary text-background px-6 py-2 font-headline font-bold uppercase text-sm border-2 border-primary neo-shadow neo-shadow-hover cursor-pointer transition-all outline-none"
+                            >
                                 {project.title}
-                            </span>
+                            </a>
                         ))}
                     </div>
                     
