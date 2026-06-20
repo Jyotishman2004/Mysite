@@ -24,10 +24,8 @@ const Projects = () => {
                                 onClick={() => {
                                     const element = document.getElementById(`project-${project.id}`);
                                     if (element) {
-                                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                        // Adjust for sticky header if needed
                                         const y = element.getBoundingClientRect().top + window.scrollY - 100;
-                                        window.scrollTo({top: y, behavior: 'smooth'});
+                                        window.scrollTo({ top: y, behavior: 'smooth' });
                                     }
                                 }}
                                 className="inline-block bg-primary text-background px-6 py-2 font-headline font-bold uppercase text-sm border-2 border-primary neo-shadow neo-shadow-hover cursor-pointer transition-all outline-none"
