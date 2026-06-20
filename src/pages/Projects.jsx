@@ -19,21 +19,27 @@ const Projects = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-wrap gap-4 mb-12 border-b-4 border-primary pb-6">
                         {projectsData.map(project => (
-                            <a 
+                            <button 
                                 key={`label-${project.id}`} 
-                                href={project.link} 
-                                target={project.link !== '#' ? '_blank' : '_self'} 
-                                rel="noreferrer"
+                                onClick={() => {
+                                    const element = document.getElementById(`project-${project.id}`);
+                                    if (element) {
+                                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                        // Adjust for sticky header if needed
+                                        const y = element.getBoundingClientRect().top + window.scrollY - 100;
+                                        window.scrollTo({top: y, behavior: 'smooth'});
+                                    }
+                                }}
                                 className="inline-block bg-primary text-background px-6 py-2 font-headline font-bold uppercase text-sm border-2 border-primary neo-shadow neo-shadow-hover cursor-pointer transition-all outline-none"
                             >
                                 {project.title}
-                            </a>
+                            </button>
                         ))}
                     </div>
                     
                     <div className="masonry-grid" style={{ columnCount: 1, columnGap: '2rem' }}>
                         {projectsData.map((project) => (
-                            <a key={project.id} href={project.link} target={project.link !== '#' ? '_blank' : '_self'} rel="noreferrer" className="block outline-none">
+                            <a id={`project-${project.id}`} key={project.id} href={project.link} target={project.link !== '#' ? '_blank' : '_self'} rel="noreferrer" className="block outline-none">
                                 <article className="masonry-item bg-background border-2 border-primary neo-shadow neo-shadow-hover transition-all group cursor-pointer relative overflow-hidden flex flex-col mb-8 break-inside-avoid">
                                     <div className={`w-full bg-primary-container relative border-b-2 border-primary overflow-hidden ${project.size === 'portrait' ? 'h-[30rem]' : 'h-80'}`}>
                                         <img alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" src={project.imageUrl}/>
