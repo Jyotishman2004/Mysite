@@ -501,8 +501,14 @@ const Terminal = () => {
                 type: 'output', node: (
                     <div className="flex flex-col gap-1 mt-1">
                         <span>1. MYY_WEATHER - Web Application (REACT, API) [LIVE]</span>
-                        <a href="https://myyweather.vercel.app" target="_blank" rel="noopener noreferrer" className="text-secondary font-black hover:underline cursor-pointer flex items-center gap-2">
+                        <a href="https://myyweather.vercel.app" target="_blank" rel="noopener noreferrer" className="text-secondary font-black hover:underline cursor-pointer flex items-center gap-2 mb-2">
                             <span>-&gt; LAUNCH LIVE PREVIEW (Type '1')</span>
+                            <span className="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+
+                        <span>2. EMBER_&_GRAIN - Web Application (REACT, CSS) [LIVE]</span>
+                        <a href="https://demoresturent.vercel.app" target="_blank" rel="noopener noreferrer" className="text-secondary font-black hover:underline cursor-pointer flex items-center gap-2">
+                            <span>-&gt; LAUNCH LIVE PREVIEW (Type '2')</span>
                             <span className="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
 
@@ -534,6 +540,14 @@ const Terminal = () => {
         if (lowerInput === '1' || lowerInput === 'open myy_weather') {
             newHistory.push({ type: 'output', text: 'Launching MYY_WEATHER in a new tab...' });
             window.open('https://myyweather.vercel.app', '_blank', 'noopener,noreferrer');
+            setHistory(newHistory);
+            setInput('');
+            return;
+        }
+
+        if (lowerInput === '2' || lowerInput === 'open ember_&_grain' || lowerInput === 'open ember_and_grain' || lowerInput === 'open demo_restaurant') {
+            newHistory.push({ type: 'output', text: 'Launching EMBER_&_GRAIN in a new tab...' });
+            window.open('https://demoresturent.vercel.app', '_blank', 'noopener,noreferrer');
             setHistory(newHistory);
             setInput('');
             return;
