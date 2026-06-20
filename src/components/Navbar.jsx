@@ -65,7 +65,6 @@ const Navbar = () => {
             <div className={`${isMobileMenuOpen ? 'flex' : 'hidden'} fixed inset-0 bg-background z-40 border-r-4 border-primary pt-20 flex-col`} style={{ marginTop: '76px' }}>
                 <div className="p-6 border-b-4 border-primary text-center">
                     <div className="font-headline font-black text-2xl text-primary tracking-tighter">JYOTISHMAN_SAIKIA</div>
-                    <div className="font-body text-sm font-bold mt-1">2024_EDITION</div>
                 </div>
                 <div className="flex-grow flex flex-col">
                     <Link onClick={toggleMobileMenu} className={getMobileLinkClass('/')} to="/">
