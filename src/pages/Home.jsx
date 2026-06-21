@@ -120,14 +120,14 @@ void main() {
                     </div>
                     <div className="absolute inset-0 bg-black/40 z-0"></div>
                 </div>
-                <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start">
-                    <div className="bg-primary p-6 md:p-10 border-4 border-primary neo-shadow inline-block transform -rotate-2 hover:rotate-0 transition-transform duration-300 max-w-4xl">
+                <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center md:items-start">
+                    <div className="bg-primary p-6 md:p-10 border-4 border-primary neo-shadow inline-block transform -rotate-2 hover:rotate-0 transition-transform duration-300 max-w-4xl text-center md:text-left">
                         <h1 className="font-headline font-black text-5xl md:text-7xl lg:text-8xl text-background leading-none tracking-tighter uppercase break-words">
                             JYOTISHMAN <br />
                             <span className="text-secondary">SAIKIA</span> <br />
                         </h1>
                     </div>
-                    <div className="mt-12 md:mt-24 bg-background p-6 border-4 border-primary neo-shadow inline-block max-w-xl self-end transform translate-y-8 translate-x-4 md:-translate-x-12">
+                    <div className="mt-12 md:mt-24 bg-background p-6 border-4 border-primary neo-shadow inline-block max-w-xl self-center md:self-end transform translate-y-8 translate-x-0 md:-translate-x-12 text-center md:text-left">
                         <p className="font-body text-lg md:text-xl font-bold text-primary">
                             B.TECH IT STUDENT &amp; FREELANCE WEB DESIGNER. BUILDING BOLD, UNAPOLOGETIC DIGITAL EXPERIENCES.
                         </p>
